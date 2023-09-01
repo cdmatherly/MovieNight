@@ -9,7 +9,7 @@ const Navbar = (props) => {
                 <Link to={"/"}>Home</Link>
                 <Link to={"/popular"}>Popular</Link>
                 <Link to={"/toprated"}>Top Rated</Link>
-                <Link>My Groups</Link>
+                <Link to={"/mygroups"}>My Groups</Link>
                 <Link>Log In</Link>
             </div>
         </div>
