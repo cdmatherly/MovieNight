@@ -1,4 +1,6 @@
 import { Link } from 'react-router-dom'
+import { useState } from 'react'
+import Modal from './Modal'
 
 const Navbar = (props) => {
 
@@ -10,8 +12,9 @@ const Navbar = (props) => {
                 <Link to={"/popular"}>Popular</Link>
                 <Link to={"/toprated"}>Top Rated</Link>
                 <Link to={"/mygroups"}>My Groups</Link>
-                <Link>Log In</Link>
+                <Modal modalText={"Login"} modalClasses={""}/>
             </div>
+            
         </div>
     )
 }
