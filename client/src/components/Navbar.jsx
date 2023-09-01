@@ -12,7 +12,7 @@ const Navbar = (props) => {
                 <Link to={"/popular"}>Popular</Link>
                 <Link to={"/toprated"}>Top Rated</Link>
                 <Link to={"/mygroups"}>My Groups</Link>
-                <Modal modalText={"Login"} modalClasses={""}/>
+                <Modal modalText={"Log In"} modalClasses={""}/>
             </div>
             
         </div>
