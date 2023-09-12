@@ -1,11 +1,11 @@
 import { useState, useEffect } from "react"
 import axios from "axios"
 
-const MyGroups = (props) => {
+const MyLists = (props) => {
     return (
         <>
             
         </>
     )
 }
-export default MyGroups
+export default MyLists

@@ -3,10 +3,9 @@ const cors = require('cors');
 const app = express();
 require('dotenv').config();
 const port = process.env.PORT;
-require('./server/config/mongoose.config');
-app.use(cors());
+require('./config/mongoose.config');
+app.use(cors({credentials: true, origin: 'http://localhost:3000'}));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-require('./server/routes/COMPONENT_NAME.routes')(app);
-    
-app.listen(port, () => console.log(`Listening on port: ${port}`) );
+require('./routes/user.routes')(app);
+const server = app.listen(port, () => console.log(`Listening on port: ${port}`) );

@@ -3,8 +3,10 @@ import Main from './views/Main'
 import Home from './views/Home';
 import Popular from './views/Popular';
 import TopRated from './views/TopRated';
-import MyGroups from './views/MyGroups';
+import MyLists from './views/MyLists';
+import NewList from './views/NewList';
 import { Route, Routes } from 'react-router-dom';
+
 function App() {
   return (
     <Routes>
@@ -12,7 +14,8 @@ function App() {
         <Route element={<Home/>} path='/'/>
         <Route element={<Popular/>} path='/popular'/>
         <Route element={<TopRated/>} path='/toprated'/>
-        <Route element={<MyGroups/>} path='/mygroups'/>
+        <Route element={<MyLists/>} path=':user_id/lists'/>
+        <Route element={<NewList/>} path='/newlist'/>
       </Route>
     </Routes>
   );
